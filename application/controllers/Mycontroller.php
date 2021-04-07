@@ -6,4 +6,8 @@ class Mycontroller extends CI_controller {
        $this->load->helper('url');
         $this->load->view('movie');
     }
+    public function single(){
+        $this->load->helper('url');
+         $this->load->view('single');
+     }
 }
