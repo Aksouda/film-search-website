@@ -11,16 +11,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 
+<div class="genre-container"></div>
+        <div class="films">
 
-
-<div class="container">
-    
-    
-    <div class="films">
-    </div>
-    
-</div>
-
+        </div>
 
 
     

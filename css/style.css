@@ -6,6 +6,10 @@
 body{
     background-color:  rgb(135, 58, 165);
 }
+a{
+    text-decoration: none;
+    color: rgb(231, 227, 238);
+}
 
 p{
     color: rgb(231, 227, 238);
@@ -13,27 +17,87 @@ p{
     padding: 5px;
     background-color: rgb(63, 4, 87);
 }
-.films{
-    display: flex;
-    flex-wrap: wrap;
-}
-.film{
-    position: relative;
-    margin: 3px;
-    background-color:rgba(255, 255, 255, 0.103);
-    border: 1px solid rgba(0, 0, 0, 0.082);
-    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.116);
-    width: 350px;
-    height: 460px;
+.heading{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    backdrop-filter: blur(9px);
+    background-color: #00000030;
+    box-shadow: 1px 2px 9px plum;
+}
+.heading h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    font-size: 60px;
+}
+#search-film{
+    margin: 30px;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#search-word{
+    width: 100%;
+    height: 40px;
+    margin: 20px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    background-color: rgba(255, 255, 255, 0.116);
+    
+    font-size: 30px;
+    
+}
+#search-btn{
     cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 3px;
+    font-size: 17px;
+    padding: 10px 20px;
+    color: plum;
+}
+#search-btn:hover{
+    background-color:rgb(63, 4, 87);
+    color: palegoldenrod;
+}
+.films{
+    margin: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#result-film{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(42, 0, 53);
+}
+.film{
+    position: relative;
+    margin: 10px;
+    background-color:rgba(255, 255, 255, 0.103);
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    box-shadow: 1px 7px 7px rgba(0, 0, 0, 0.116);
+    width: 350px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.film:hover{
+    box-shadow: 1px 2px 30px rgb(97, 22, 97);
 }
 img{
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
     
 }
 .film-info{
@@ -42,6 +106,27 @@ img{
     align-items: center;
    height: 60px;
     width: 300px;
+    
+}
+#film-title{
+    color: rgb(0, 0, 0);
+    
+}
+.popup a{
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    background-color: rgba(247, 242, 242, 0.13);
+    color: rgb(60, 4, 87);
+    font-size: 19px;
+    margin-top: 40px;
+    text-align: center;
+    
+    
+
+}
+.popup a:hover{
+    background-color: rgb(60, 4, 87);
+    color: rgba(255, 255, 255, 0.897);
 }
 
 .popup{
@@ -61,10 +146,85 @@ img{
 }
 .popup-title ,
 .popup-date{
+    text-align: center;
     padding: 6px;
     color: rgb(31, 29, 29);
 }
+.popup p{
+    padding: 10px;
+
+}
 #search-result{
+   
     display: flex;
     flex-wrap: wrap;
+}
+.genre-container{
+    display: flex;
+}
+.genres{
+   
+    margin: 2px;
+    
+}
+.single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.single img{
+    object-fit: cover;
+    height: max-content;
+    width: max-content;
+    box-shadow: 9px 10px 201px #b900b3;
+}
+
+
+
+.single-info{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(54 0 68 / 65%);
+    box-shadow: 2px 2px 900px #d406bba8;
+    border-radius: 10px;
+}
+.single-info h3,.single-info h4 {
+    color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    
+    
+}
+.single-info h4 span{
+    background-color:  rgb(135, 58, 165);
+    color: rgb(2, 2, 2);
+    width: 25px;
+    height: 20px;
+    border-radius:3px ;
+    padding: 2px;
+    margin-bottom: 2px;
+
+}
+.rate-date  p{
+    padding: 20px;
+}
+.rate-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.single-info  a{
+    margin: 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.single-info  a:hover{
+    background-color: rgb(63, 4, 87);
 }
